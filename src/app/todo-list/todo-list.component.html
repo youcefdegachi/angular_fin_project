@@ -1,0 +1,56 @@
+<!-- !! navbar -->
+<p>
+  <mat-toolbar>
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    <!-- <ng-container > -->
+    <!-- <button routerLink="/todo"  routerLink="/todo" routerLinkActive="active">todo</button> </div>
+    <button routerLink="/todo"  routerLink="/todo" routerLinkActive="active">pomodoro</button> </div> -->
+
+
+    <section>
+      <div class="example-button-row">
+      <div class="flex"><button mat-raised-button color="accent" routerLink="/todo" routerLinkActive="active">todo</button></div>
+      <div class="flex"><button mat-raised-button color="accent" routerLink="/pomodoro" routerLinkActive="active">pomodoro</button></div>
+
+      </div>
+  </section>
+    <div class="flex" class="example-spacer"></div>
+  <!-- </ng-container>       -->
+  </mat-toolbar>
+</p>
+
+
+<form>
+  <mat-form-field class="example-chip-list">
+    <mat-label>Tasks</mat-label>
+    
+    <input placeholder="New task..." #fruitInput 
+      [formControl]="fruitCtrl"
+      [matChipInputFor]="chipGrid" [matAutocomplete]="auto"
+      [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+      (matChipInputTokenEnd)="add($event)"/>
+    
+      <mat-chip-grid #chipGrid aria-label="Fruit selection">
+        <mat-chip-row *ngFor="let fruit of fruits; trackBy: trackByFunction" (removed)="remove(fruit)">
+            {{fruit}}
+            <button matChipRemove [attr.aria-label]="'remove ' + fruit">
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-chip-row>
+    </mat-chip-grid>
+    
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+        <!-- <mat-chip-row *ngFor="let fruit of filteredFruits | async; trackBy: trackByFunction"> -->
+            <!-- <mat-option [Value]="fruit">{{fruit}}</mat-option> -->
+            <mat-option *ngFor="let fruit of filteredFruits | async; trackBy: trackByFunction" [value]="fruit">
+                {{ fruit }}
+              </mat-option>
+          <!-- </mat-chip-row> -->
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+
+
+<!-- <router-outlet></router-outlet> -->
