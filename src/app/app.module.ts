@@ -7,15 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { PomodoroComponent } from './pomodoro/pomodoro.component';
-import { ProblemPageComponent } from './problem-page/problem-page.component';
-import { ForgetPasswordComponent } from './forget-password/forget-password.component';
-
-
 
 
 
@@ -77,22 +68,21 @@ import {MatRadioModule} from '@angular/material/radio';
     // !! navbar
 
     import {MatToolbarModule} from '@angular/material/toolbar';
+import { ConnexionComponent } from './connexion/connexion.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 // !! 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignInComponent,
-    SignUpComponent,
 
-    HomePageComponent,
-    PomodoroComponent,
-    ProblemPageComponent,
-    ForgetPasswordComponent,
+    ConnexionComponent,
+    InscriptionComponent,
+    AccueilComponent,
   ],
   imports: [
-    TodoListComponent,
     BrowserModule,
     AppRoutingModule,
     FormsModule, 

@@ -1,0 +1,46 @@
+
+
+<p>
+    <mat-toolbar>
+        <div class="flex"><button mat-raised-button color="accent" routerLink="/accueil" routerLinkActive="active">accueil</button></div>
+        <div class="flex"><button mat-raised-button color="accent" routerLink="/connexion" routerLinkActive="active">connexion</button></div>
+    <div class="flex"><button mat-raised-button color="accent" routerLink="/inscrepition" routerLinkActive="active">inscrepition</button></div>
+    <span><button mat-raised-button color="accent" routerLink="/connexion" routerLinkActive="active">deconnection</button></span>
+    </mat-toolbar>
+</p>
+
+
+
+<mat-card class="example-card">
+    <mat-card-content>sign-in</mat-card-content>
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>nom</mat-label>
+            <input matInput id="username" formControlName="username" required>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>prenom</mat-label>
+            <input matInput id="username" formControlName="username" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>age</mat-label>
+            <input matInput id="username" formControlName="username" required>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+        <mat-label>email</mat-label>
+        <input matInput placeholder="don't forget @gmail.com" value="@gmail.com"id="username" formControlName="username" required>
+        </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>password</mat-label>
+        <input matInput type="password" id="password" formControlName="password" require>
+        </mat-form-field>
+        <section>
+            <div class="example-button-row">
+            <button mat-raised-button color="accent"  routerLink="/accueil">submit</button>
+            <button mat-raised-button color="accent" routerLink="/connexion" routerLinkActive="active">connexion</button>
+            </div>
+        </section>
+    </form>
+
+</mat-card>

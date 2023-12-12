@@ -1,0 +1,68 @@
+
+
+
+
+.example-card mat-card-content{
+    // background-color: rgb(4, 17, 17);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+
+
+
+
+
+
+section {
+    display: table;
+    margin: auto;
+}
+
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+}
+
+.example-button-row {
+    display: table-cell;
+    max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}
+
+
+
+
+
+
+

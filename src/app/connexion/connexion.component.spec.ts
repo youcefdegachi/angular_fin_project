@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PomodoroComponent } from './pomodoro.component';
+import { ConnexionComponent } from './connexion.component';
 
-describe('PomodoroComponent', () => {
-  let component: PomodoroComponent;
-  let fixture: ComponentFixture<PomodoroComponent>;
+describe('ConnexionComponent', () => {
+  let component: ConnexionComponent;
+  let fixture: ComponentFixture<ConnexionComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PomodoroComponent]
+      declarations: [ConnexionComponent]
     });
-    fixture = TestBed.createComponent(PomodoroComponent);
+    fixture = TestBed.createComponent(ConnexionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
